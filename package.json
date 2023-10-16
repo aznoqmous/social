@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "start": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prisma:generate": "cp prisma/dev.db ./.output/server/node_modules/.prisma/client/dev.db",
+    "migrate": "npx prisma migrate dev -n migration ; npx prisma generate"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@prisma/client": "^5.4.2",
+    "nuxt": "^3.7.4",
+    "prisma": "^5.4.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "instagram-graph-api": "^5.0.1",
+    "oauth-1.0a": "^2.2.6",
+    "process": "^0.11.10",
+    "sass": "^1.69.0"
+  }
+}

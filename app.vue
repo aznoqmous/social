@@ -1,0 +1,12 @@
+<template>
+  <div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <SocialList></SocialList>
+    <div class="container">
+      <NuxtPage/>
+    </div>
+  </div>
+</template>
+<style lang="scss">
+  h1 {}
+</style>
